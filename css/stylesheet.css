@@ -1,0 +1,94 @@
+* {
+    margin: 0%
+}
+
+#sid1 {
+    display: grid;
+    grid-template-rows: 100px 45px 1fr 1fr 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    height: 100vh;
+    background: darkgreen;
+    grid-template-areas:
+    'hd hd hd'
+    'nv nv nv'
+    'as1 mn sc'
+    'as2 mn sc'
+    'ft ft ft'
+}
+
+header {
+    grid-area: hd;
+    background: rgb(184, 0, 37);
+    color: bisque;
+}
+
+nav {
+    grid-area: nv;
+    background: #d6b912;
+    display: flex;
+    flex-direction: row;
+}
+
+#as1 {
+    grid-area: as1;
+    background: rgb(184, 0, 37);
+    color: rgb(253, 235, 213);
+}
+
+#as2 {
+    grid-area: as2;
+    background: rgb(184, 0, 37);
+}
+
+main {
+    grid-area: mn;
+    background: rgb(184, 0, 37);
+}
+
+section {
+    grid-area: sc;
+    background: rgb(184, 0, 37); 
+}
+
+footer {
+    grid-area: ft;
+    background: darkgreen;
+    color: rgb(253, 235, 213);
+}
+
+article {
+    background: rgb(253, 235, 213);
+    width: 20em;
+    margin: 20px auto;
+    border-radius: 1rem;
+}
+
+h2 {
+    margin: 10px;
+    padding: 10px 0px 0px 10px;
+}
+
+p {
+    margin: 15px;
+    padding: 0px 0px 10px 10px;
+}
+
+#agare {
+    width: 400px;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.klickbar {
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
