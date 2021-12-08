@@ -17,38 +17,70 @@
     'ft ft ft'
 }
 
+#meny {
+    display: grid;
+    grid-template-rows: 100px 45px 45px 1fr 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    height: 100vh;
+    background: darkgreen;
+    grid-template-areas:
+    'hd hd hd'
+    'nv nv nv'
+    'rb mn3 mn4'
+    'mn2 mn3 mn4'
+    'ft ft ft'
+}
+
+
+#recept {
+    display: grid;
+    grid-template-rows: 100px 45px 1fr 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    height: 100vh;
+    background: darkgreen;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'mn5 mn6 mn7'
+    'ft ft ft'
+}
+
 header {
     grid-area: hd;
-    background: rgb(184, 0, 37);
-    color: bisque;
+    color: rgb(7, 56, 0);
+    background-image: url(../img/julglitter.jpg);
+    background-size: 100vw;
 }
 
 nav {
     grid-area: nv;
-    background: #d6b912;
+    background: darkgreen;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #as1 {
     grid-area: as1;
-    background: rgb(184, 0, 37);
+    background: maroon;
     color: rgb(253, 235, 213);
 }
 
 #as2 {
     grid-area: as2;
-    background: rgb(184, 0, 37);
+    background: maroon;
 }
 
-main {
+#m1 {
     grid-area: mn;
-    background: rgb(184, 0, 37);
+    background: maroon;
 }
 
 section {
     grid-area: sc;
-    background: rgb(184, 0, 37); 
+    background: maroon;
 }
 
 footer {
@@ -67,6 +99,7 @@ article {
 h2 {
     margin: 10px;
     padding: 10px 0px 0px 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 p {
@@ -86,9 +119,58 @@ h3 {
 
 .klickbar {
     flex: 1;
+    color: rgb(253, 235, 213);
+    margin: 15px;
+    padding: 0px 0px 10px 10px;
+}
+
+.klickbar:hover {
+    color: red;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 5rem;
+    padding: 0px 0px 0px 20px;
+}
+
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#m2 {
+    grid-area: mn2;
+    background: maroon;
+}
+
+#m3 {
+    grid-area: mn3;
+    background: maroon;
+}
+
+#m4 {
+    grid-area: mn4;
+    background: maroon;
+}
+
+#m5 {
+    grid-area: mn5;
+    background: maroon;
+}
+
+#m6 {
+    grid-area: mn6;
+    background: maroon;
+}
+
+#m7 {
+    grid-area: mn7;
+    background: maroon;
+}
+
+.Rubrik {
+    grid-area: rb;
+    background: maroon;  
+    font-size: 1.5rem;
 }
