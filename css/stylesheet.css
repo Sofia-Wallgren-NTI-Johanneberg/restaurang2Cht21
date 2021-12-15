@@ -4,10 +4,9 @@
 
 #sid1 {
     display: grid;
-    grid-template-rows: 100px 45px 1fr 1fr 60px;
+    grid-template-rows: 100px 45px 150px 1fr 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5px;
-    height: 100vh;
     background: darkgreen;
     grid-template-areas:
     'hd hd hd'
@@ -19,7 +18,7 @@
 
 #meny {
     display: grid;
-    grid-template-rows: 100px 45px 45px 1fr 60px;
+    grid-template-rows: 100px 45px 1fr 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5px;
     height: 100vh;
@@ -27,7 +26,6 @@
     grid-template-areas:
     'hd hd hd'
     'nv nv nv'
-    'rb mn3 mn4'
     'mn2 mn3 mn4'
     'ft ft ft'
 }
@@ -52,6 +50,9 @@ header {
     color: rgb(7, 56, 0);
     background-image: url(../img/julglitter.jpg);
     background-size: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav {
     background: darkgreen;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #as1 {
@@ -87,6 +88,8 @@ footer {
     grid-area: ft;
     background: darkgreen;
     color: rgb(253, 235, 213);
+    display: flex;
+    flex-direction: row;
 }
 
 article {
@@ -108,35 +111,30 @@ p {
 }
 
 #agare {
-    width: 400px;
-    padding: 10px;
+    width: 350px;
     border-radius: 2rem;
+    margin: 0px 35px 20px 35px;
 }
 
 h3 {
     margin: 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .klickbar {
-    flex: 1;
+    font-family: 'Dancing Script', cursive;
     color: rgb(253, 235, 213);
     margin: 15px;
-    padding: 0px 0px 10px 10px;
 }
 
 .klickbar:hover {
-    color: red;
+    color: maroon;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 5rem;
-    padding: 0px 0px 0px 20px;
-}
-
-
-h3 {
-    font-family: 'Dancing Script', cursive;
+    padding: 0px 0px 0px 30px;
 }
 
 #m2 {
@@ -169,8 +167,16 @@ h3 {
     background: maroon;
 }
 
-.Rubrik {
-    grid-area: rb;
-    background: maroon;  
-    font-size: 1.5rem;
+a {
+    text-decoration: none;
+}
+
+.foten {
+    margin: 22px 50px 22px 50px;
+}
+
+.logga {
+    background: maroon;
+    border-radius: 1rem 0rem 0rem 1rem;
+    padding: 5px;
 }
